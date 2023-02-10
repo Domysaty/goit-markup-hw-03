@@ -11,21 +11,9 @@
   --primary-bck-color: #ffffff;
 }
 
-.hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
-}
-
 body {
   color: var(--body-text-color);
+  background-color: var(--primary-bck-color);
   font-family: var(--primary-font);
   font-size: 16px;
   line-height: 1.5;
@@ -56,6 +44,19 @@ img {
   height: auto;
 }
 
+.hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  margin: -1px;
+}
+
 .link {
   text-decoration: none;
 }
@@ -66,9 +67,11 @@ img {
 
 /* Components */
 
-.section {
-  padding-top: ;
-  outline: 2px solid tomato;
+.container {
+  width: 100%;
+  max-width: 1128px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .logo {
@@ -89,6 +92,7 @@ img {
 }
 
 .primary-title {
+  margin-bottom: 72px;
   color: var(--dark-heads-color);
   font-family: var(--primary-font);
   font-size: 36px;
@@ -99,6 +103,7 @@ img {
 }
 
 .secondary-title {
+  margin-bottom: 8px;
   color: var(--dark-heads-color);
   font-family: var(--primary-font);
   font-weight: 500;
@@ -162,10 +167,13 @@ img {
 /* Hero */
 
 .hero {
+  padding-top: 188px;
+  padding-bottom: 188px;
   background-color: var(--dark-heads-color);
 }
 
 .hero-title {
+  margin-bottom: 48px;
   color: var(--primary-bck-color);
   font-family: var(--primary-font);
   font-size: 56px;
@@ -191,6 +199,27 @@ img {
   color: var(--primary-bck-color);
 }
 
+/* adventages section */
+
+.advantages-section {
+  padding-top: 120px;
+  padding-bottom: 60px;
+}
+
+/* product section */
+
+.product-section {
+  padding-top: 60px;
+  padding-bottom: 120px;
+}
+
+/* team section */
+
+.team-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 /* Footer */
 
 .footer {
@@ -198,5 +227,6 @@ img {
 }
 
 .footer-text {
+  margin-top: 16px;
   color: var(--accent-color);
 }
